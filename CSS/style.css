@@ -1,0 +1,114 @@
+body, html {
+    height: 100%;
+    margin:0;
+}
+
+/* hide scroll but still can scroll
+::-webkit-scrollbar { 
+    display: none; 
+}*/
+
+@font-face {
+    font-family: ssp-light;
+    src: url(../Source_Sans_Pro/SourceSansPro-Light.ttf);
+}
+
+/*
+galau mau yg mana :");
+.background {
+     background-image: url('../Assets/Logo/bg.jpg');
+     background-repeat:no-repeat;
+     background-size: 100%;
+     opacity: 0.9;
+     height: 50%;
+}*/
+
+.background {
+     background-image: url('../Assets/Logo/background.jpg');
+     height: 50%;
+}
+
+.background img {
+    width: 15%;
+    margin-left: 43%;
+    transition : all 0.5s ease-in;
+    tranform-style : preserve-3d;
+}
+
+.background img:hover {
+    transform : rotatey(360deg);
+}
+
+.parallax-img-1 {
+    background-image: url('../Assets/Player-Profile/TO.jpg');
+}
+
+.parallax-img-2 {
+    background-image: url('../Assets/Player-Profile/MV.jpg');
+}
+
+.parallax-img-3 {
+    background-image: url('../Assets/Player-Profile/ED.jpg');
+}
+
+.parallax-img-4 {
+    background-image: url('../Assets/Player-Profile/LO.jpg');
+}
+
+.parallax-img-5 {
+    background-image: url('../Assets/Player-Profile/CA.jpg');
+}
+
+
+.parallax-img-1, .parallax-img-2, .parallax-img-3, .parallax-img-4, .parallax-img-5 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80%;
+}
+
+.player {
+    margin: auto;
+    width: 60%;
+    font-family: ssp-light;
+    font-size: 20px;
+}
+
+#player-name {
+    color: #82d3f6;
+}
+
+.player-pic-1, .player-pic-2, .player-pic-3, .player-pic-4, .player-pic-5{
+    position: absolute;
+    margin-top: 14%;
+}
+
+.player-pic-1, .player-pic-3, .player-pic-5 {
+    margin-left: 5%;
+}
+
+.player-pic-2, .player-pic-4{
+    margin-left: 75%;
+}
+
+.title {
+    font-family: 'ssp-light';
+    font-size: 60px;
+    text-align: center;
+    margin-bottom:-10px;
+    margin-top: 0;
+	color: #081b3e;
+	text-shadow: 0 0 5px #039BE5, 0 0 15px #1A237E;
+}
+
+.title:hover {
+    color: #82d3f6; 
+}
+
+/*responsive*/
+@media screen and (max-width: 400px) {
+    .background img {
+        display: none;
+    }
+}
